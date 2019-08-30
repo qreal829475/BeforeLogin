@@ -20,26 +20,13 @@
 <BeforeLogin isShow="{{true}}" bindcustomevent='func' />
 
 
+isShow：   {boolean}     控制弹框的展示或隐藏
 
+bindcustomevent:	  {function}    用户点击“立即登录”或“暂不登录”的回调
 
-参数名		示例							操作
------
+({type: 'consent'|'refuse'},e:event) => { }
 
-isShow				{boolean}												控制弹框的展示或隐藏
+type:  'consent' 用户点击“立即登录” | 'refuse' 用户点击“暂不登录”;
 
-bindcustomevent		{function}												用户点击“立即登录”或“暂不
-
-​					 ({type: 'consent'\|'refuse'},e:event) => { } 					登录”的回调
-
-​					type:   'consent' 用户点击”立即登录“; 
-
-​						    'refuse' 用户点击“暂不登录”;
-
-​					e: event 微信在调用type为getPhoneNumber时，返回的所有信息;
-
-
-
-
-
-
+e: event 微信在调用type为getPhoneNumber时，返回的所有信息;
 
