@@ -1,0 +1,16 @@
+<!--components/BeforeLogin/index.wxml-->
+
+<view class="container {{isShow? '': 'hidden' }}">
+    <view class="content">
+        <view class="title">您还尚未登录</view>
+        <view class="label">请先登录再进行操作</view>
+        <image class="login-img" src="../../assets/img/login.png"></image>
+        <view class="btns">
+            <view class="btn btn1" bindtap="refuse">暂不登录</view>
+            <!-- <view class="btn btn2" bindtap="consent">立即登录</view> -->
+            <button class='btn btn2' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber">
+                <view>立即登录</view>
+            </button>
+        </view>
+    </view>
+</view>
